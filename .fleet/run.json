@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "Upload to server",
+            "type": "command",
+            "program": "$PROJECT_DIR$/update.ps1"
+        }
+    ]
+}
