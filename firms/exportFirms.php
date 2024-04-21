@@ -95,10 +95,10 @@ $csv = $csv_first . "\n" . $csv;
 
 //exit;
 
-/* $file = "export.csv";
+$file = "export.csv";
 $txt = fopen($file, "w") or die("Unable to open file!");
 fwrite($txt, iconv("UTF-8", "ISO-8859-2//TRANSLIT", $csv));
-fclose($txt); */
+fclose($txt);
 header("Content-Type: text/plain; charset=ISO-8859-2");
 header('Content-Description: File Transfer');
 header('Content-Disposition: attachment; filename='.basename($file));
@@ -106,7 +106,7 @@ header('Expires: 0');
 header('Cache-Control: must-revalidate');
 header('Pragma: public');
 header('Content-Length: ' . filesize($file));
-echo $csv;
+readfile($file);
 
 }
 
