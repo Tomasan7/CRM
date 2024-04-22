@@ -75,7 +75,7 @@ $(document).ready(function () {
                 if (!this.classList.contains("name"))
                     return;
                 console.log("editClick called")
-                editClick(this.parent.id);
+                editClick(this.parent.id, 1);
             });
             // EDIT END
         }
