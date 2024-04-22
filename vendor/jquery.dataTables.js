@@ -11678,7 +11678,7 @@
 			 * Display information string for when the table is empty. Typically the
 			 * format of this string should match `info`.
 			 *  @type string
-			 *  @default Ukazuje 0 to 0 of 0 entries
+			 *  @default Showing 0 to 0 of 0 entries
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.infoEmpty
@@ -14687,7 +14687,7 @@
 		},
 	
 		full: function ( page, pages ) {
-			return [  'first', 'previous', 'next', 'last' ];
+			return [  'prvni', 'previous', 'next', 'last' ];
 		},
 	
 		numbers: function ( page, pages ) {
@@ -14699,11 +14699,11 @@
 		},
 	
 		full_numbers: function ( page, pages ) {
-			return [ 'first', 'previous', _numbers(page, pages), 'next', 'last' ];
+			return [ 'prvni', 'previous', _numbers(page, pages), 'next', 'last' ];
 		},
 		
 		first_last_numbers: function (page, pages) {
-	 		return ['first', _numbers(page, pages), 'last'];
+	 		return ['prvni', _numbers(page, pages), 'last'];
 	 	},
 	
 		// For testing and plug-ins to use
@@ -14747,7 +14747,7 @@
 									container.append('<span class="ellipsis">&#x2026;</span>');
 									break;
 	
-								case 'first':
+								case 'prvni':
 									btnDisplay = lang.sFirst;
 	
 									if ( page === 0 ) {
