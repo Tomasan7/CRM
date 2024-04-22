@@ -11600,7 +11600,7 @@
 				 * Text to use for the 'previous' pagination button (to take the user to
 				 * the previous page).
 				 *  @type string
-				 *  @default Previous
+				 *  @default Predchozi
 				 *
 				 *  @dtopt Language
 				 *  @name DataTable.defaults.language.paginate.previous
@@ -11616,7 +11616,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Predchozi"
 			},
 	
 			/**
