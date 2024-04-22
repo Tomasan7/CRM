@@ -11678,7 +11678,7 @@
 			 * Display information string for when the table is empty. Typically the
 			 * format of this string should match `info`.
 			 *  @type string
-			 *  @default Showing 0 to 0 of 0 entries
+			 *  @default Ukazuje 0 to 0 of 0 entries
 			 *
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.infoEmpty
