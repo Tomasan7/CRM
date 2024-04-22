@@ -66,7 +66,9 @@ $(document).ready(function () {
             search: "",
             searchPlaceholder: "Vyhledávání",
             lengthMenu:     "Ukazat _MENU_ vztupů",
+            zeroRecords:    "Nebyli nalezeny žádné výsledky",
         },
+
   
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
