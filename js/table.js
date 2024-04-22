@@ -71,11 +71,9 @@ $(document).ready(function () {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
             // EDIT START
             $('#basic tbody').on('click', 'td', function () {
-                console.log("Clicked")
                 if (!this.classList.contains("name"))
                     return;
-                console.log("editClick called")
-                editClick(this.parent.id, 1);
+                editClick(this.parentElement.id, 1);
             });
             // EDIT END
         }
