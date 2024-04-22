@@ -65,9 +65,9 @@ $(document).ready(function () {
         language: {
             search: "",
             searchPlaceholder: "Vyhledávání",
-            lengthMenu:     "Ukazat _MENU_ vztupů",
+            lengthMenu:     "Ukazat _MENU_ záznamy",
             zeroRecords:    "Nebyli nalezeny žádné výsledky",
-            info:           "Ukazuje _START_ do _END_ z _TOTAL_ entries",
+            info:           "Ukazuje _START_ do _END_ z _TOTAL_ záznamů",
         },
 
   
