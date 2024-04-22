@@ -64,7 +64,8 @@ $(document).ready(function () {
        // responsive: true,
         language: {
             search: "",
-            searchPlaceholder: "Vyhledávání"
+            searchPlaceholder: "Vyhledávání",
+            lengthMenu:     "Ukazat _MENU_ entries",
         },
   
         initComplete: function (settings, json) {
