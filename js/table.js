@@ -65,7 +65,7 @@ $(document).ready(function () {
         language: {
             search: "",
             searchPlaceholder: "Vyhledávání",
-            lengthMenu:     "Ukazat _MENU_ entries",
+            lengthMenu:     "Ukazat _MENU_ vztupů",
         },
   
         initComplete: function (settings, json) {
