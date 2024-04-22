@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
 
-        $('#basic').DataTable({
+        var table = $('#basic').DataTable({
         stateSave: true,
         dom: 'lBftrip',
         buttons: [
@@ -70,7 +70,18 @@ $(document).ready(function () {
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
 
+            $('#basic tbody').on('click', 'td', function () {
+                // Retrieve cell data
+                var cellData = table.cell(this).data();
+
+                // Do something with the cell data
+                console.log('Cell clicked, data:', cellData);
+
+                // Example: Alert the cell data
+                alert('Cell clicked, data: ' + cellData);
+            });
         }
+
     });//$('#basic').DataTable({
     
     
@@ -305,4 +316,3 @@ function closeIFrame2(){
     $(".myframe2").hide();
     location.reload();
 }
-
