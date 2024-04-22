@@ -68,6 +68,16 @@ $(document).ready(function () {
             lengthMenu:     "Ukazat _MENU_ záznamy",
             zeroRecords:    "Nebyli nalezeny žádné výsledky",
             info:           "Ukazuje _START_ do _END_ z _TOTAL_ záznamů",
+            infoFiltered:   "(Filtrované z _MAX_ celkových záznamů)",
+            "paginate": {
+                first:      "První",
+                last:       "Poslední",
+                next:       "Další",
+                previous:   "Minulé"
+            },
+            infoEmpty:      "Ukazuje 0 do 0 z 0 záznamů",
+            loadingRecords: "Načítání...",
+            zeroRecords:    "Nenalezeny žádné záznamy",
         },
 
   
