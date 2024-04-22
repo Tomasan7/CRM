@@ -156,6 +156,8 @@ $(document).ready(function(event){
 
 $(".paginate_button").each (function(event){
 
+    console.log($(this))
+
     $(this).click(function(event){
      addClick();
      });
