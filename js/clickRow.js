@@ -88,7 +88,8 @@ function addClick() {
 
 
 $(document).ready(function(event){
-	addClick();
+    // REMOVED BY TOMASAN7
+	//addClick();
 
   $("input[name=email").on("change, keyup",function(event){
   
@@ -153,14 +154,14 @@ $(document).ready(function(event){
       });
     });
 
-
-$(".paginate_button").each (function(event){
+/* REMOVED BY TOMASAN7 */
+/*$(".paginate_button").each (function(event){
 
     $(this).click(function(event){
      addClick();
      });
  
-      });
+      });*/
      $(".overlay button").click(function(event){
      hideFirmEdit();
      });

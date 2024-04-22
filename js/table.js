@@ -69,8 +69,15 @@ $(document).ready(function () {
   
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
-
+            // EDIT START
+            $('#basic tbody').on('click', 'td', function () {
+                if (!this.classList.contains("name"))
+                    return;
+                editClick(this.parentElement.id, 1);
+            });
+            // EDIT END
         }
+
     });//$('#basic').DataTable({
     
     
@@ -305,4 +312,3 @@ function closeIFrame2(){
     $(".myframe2").hide();
     location.reload();
 }
-

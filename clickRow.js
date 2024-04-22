@@ -69,7 +69,7 @@ $(document).ready(function(event){
         
         editClick(id);  
         
-          //  showFirmEdit() - starý form
+          //  showFirmEdit() - starï¿½ form
        
         }
         

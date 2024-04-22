@@ -9,6 +9,7 @@ try {
     }
 
     git checkout trash
+    git pull
     git add .
     git commit -m "$commitMessage"
     git push
