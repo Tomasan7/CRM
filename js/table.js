@@ -69,17 +69,13 @@ $(document).ready(function () {
   
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
-
+            // EDIT START
             $('#basic tbody').on('click', 'td', function () {
-                // Retrieve cell data
-                var cellData = table.cell(this).data();
-
-                // Do something with the cell data
-                console.log('Cell clicked, data:', cellData);
-
-                // Example: Alert the cell data
-                alert('Cell clicked, data: ' + cellData);
+                if (!this.classList.contains("name"))
+                    return;
+                editClick(this.parent.id);
             });
+            // EDIT END
         }
 
     });//$('#basic').DataTable({
