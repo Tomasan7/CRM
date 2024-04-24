@@ -88,7 +88,8 @@ function myFunction() {
 }
 </script>
     <script>
-        url = "<?php echo "https://" . $_SERVER['HTTP_HOST']; ?>/";
+        //url = "<?php echo "https://" . $_SERVER['HTTP_HOST']; ?>/";
+        url = "http://s-crm-c3c5.dev.spsejecna.net";
     </script>
     
 
