@@ -25,6 +25,8 @@ $CFG->dboptions = array (
 'dbcollation' => 'utf8mb4_unicode_ci'
 
 );
+
+$_SERVER['HTTP_HOST'] = 'http://s-crm-c3c5.dev.spsejecna.net';
           
 if (empty($_SERVER['HTTP_HOST'])) {
     $_SERVER['HTTP_HOST'] = '127.0.0.1:80';
