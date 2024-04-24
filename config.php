@@ -65,3 +65,5 @@ $CFG->wwwroot   = 'https://moodle.studujkdychces.cz';
 //ini_set('display_errors', '0');;
 
 //echo $CFG->auth='manual';
+
+?>
