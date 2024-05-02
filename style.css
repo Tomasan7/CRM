@@ -60,19 +60,7 @@
 }
 
 
-#closeIframe {
-    z-index: 100;
-    position: absolute;
-    float: left;
-    left: 0;
-    margin: 20px;
-    border: none;
-    padding: 10px;
-    background-color: red !important;
-    color: white;
-    border-radius: 10px;
-    transition: 0.2s;
-}
+
 
 #closeIframe:hover {
     cursor: pointer;
