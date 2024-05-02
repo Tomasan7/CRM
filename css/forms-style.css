@@ -18,7 +18,20 @@ display:none;
 }
 
 
-
+#closeIframe {
+    z-index: 120;
+    position: absolute;
+    float: right;
+    right: 0;
+    top:50px;
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    background-color: red !important;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
 
 #closeIframe:hover {
     cursor: pointer;
