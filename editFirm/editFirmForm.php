@@ -1,6 +1,4 @@
-<div id="try">
-  <button id="closeIframe">Zavřít</button>
-</div>
+<button id="closeIframe">Zavřít</button><br>
 <div id="dialog-confirm" title="Empty the recycle bin?" style="display:none">
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
 </div>
