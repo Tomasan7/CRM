@@ -20,8 +20,9 @@ display:none;
 
 #closeIframe {
     z-index: 120;
-    position: relative;
-    float: middle;
+    position: absolute;
+    float: right;
+    right: 0;
     top:50px;
     margin: 20px;
     border: none;
