@@ -20,7 +20,7 @@ display:none;
 
 #closeIframe {
     z-index: 120;
-    position: absolute;
+    position: relative;
     float: middle;
     top:50px;
     margin: 20px;
