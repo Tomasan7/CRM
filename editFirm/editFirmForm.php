@@ -116,10 +116,11 @@
   </form>
   
   <div id="firm_photos"></div>
-  <div id="test"></div>
+  
 <?php
  include "./vendor/dragdrop/uploader.php"; 
 
 ?>
+<div id="test"></div>
 
 

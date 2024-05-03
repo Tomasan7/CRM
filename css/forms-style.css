@@ -39,7 +39,7 @@ display:none;
 }
 #test{
   width: 100%;
-  color: red;
+  background-color: red;
   height: 10px;
 
 }
