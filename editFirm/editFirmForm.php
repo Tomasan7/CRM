@@ -3,10 +3,10 @@
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
 </div>
   <form action="" class="form" id="<?php //echo $_GET["id"]; ?>">
-  <button id="closeIframe">Zavřít</button><br>
+    <button id="closeIframe">Zavřít</button><br>
     <p class="field">
-     <!-- <h2 class="label" style="font-size:">Zobrazení a editace firmy</h2>//-->
-      30px
+     <!-- <h2 class="label" style="font-size:30px">Zobrazení a editace firmy</h2>//-->
+      
     <label class="editFirmSuccess">Uloženo</label>
        
     </p>
@@ -116,7 +116,7 @@
   </form>
   
   <div id="firm_photos"></div>
-
+  <div id="test"></div>
 <?php
  include "./vendor/dragdrop/uploader.php"; 
 
