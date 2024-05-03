@@ -1,5 +1,5 @@
 #test{
-  overflow:auto;
+  overflow:scroll;
 }    
 .myframe2 {
   background-color: white;
