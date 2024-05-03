@@ -28,9 +28,11 @@ display:none;
 
 #closeIframe {
     z-index: 120;
-    margin: 20px;
     border: none;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: red !important;
     color: white;
     border-radius: 10px;
