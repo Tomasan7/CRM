@@ -1,14 +1,17 @@
 #test{
   overflow:scroll;
-  height: auto;
+  height: 90%;
 }    
+#testClose{
+  height: 10%;
+}
 .myframe2 {
   background-color: white;
   font-family: "Titillium Web", sans-serif;
   padding: 1em;
   border:2px solid black;
   font-size: 1.15em;
-  display: flex;
+  
   
     position: absolute;
 display:none;
