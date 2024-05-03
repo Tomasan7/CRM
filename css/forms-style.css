@@ -30,7 +30,7 @@ display:none;
 #closeIframe {
     z-index: 120;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: red !important;
     color: white;
     border-radius: 10px;

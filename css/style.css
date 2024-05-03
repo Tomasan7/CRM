@@ -693,12 +693,7 @@ div.tables {
     }
 
 
-    #closeIframe {
-        z-index: 100;
-        position: absolute;
-        float: right;
-        right: 0;
-    }
+    
 
     iframe {
         position: relative;
