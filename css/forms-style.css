@@ -1,11 +1,12 @@
-    
+#test{
+  overflow:auto;
+}    
 .myframe2 {
   background-color: white;
   font-family: "Titillium Web", sans-serif;
   padding: 1em;
   border:2px solid black;
   font-size: 1.15em;
-  overflow:auto;
 
     position: absolute;
 display:none;
