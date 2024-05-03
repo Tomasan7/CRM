@@ -6,6 +6,7 @@
   height: 10%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .myframe2 {
   background-color: white;
