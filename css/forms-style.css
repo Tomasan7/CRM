@@ -1,6 +1,6 @@
 #test{
   overflow:scroll;
-  
+  height: 100%;
 }    
 .myframe2 {
   background-color: white;
