@@ -37,12 +37,7 @@ display:none;
     cursor: pointer;
     background-color: #D10000 !important;
 }
-#test{
-  width: 100%;
-  background-color: red;
-  height: 10px;
 
-}
 @media screen and (min-width: 40em) {
   myframe2 {
     font-size: 1.25em;
