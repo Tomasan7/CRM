@@ -1812,33 +1812,36 @@ table.dataTable {
 .exportButton:hover{
     background-color: #2073ab;
 }
-#exportForm {
-    margin-bottom: 10px;
+#exportForm {margin-bottom:10px;
+   
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  #exportForm form {
-    flex: 1 0 50%;  /* Adjusts width to 50% */
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .form-group {
+        flex-wrap: wrap;
+        gap: 10px;
+
+}
+#exportForm form {
+    flex: 1 1 calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+.form-group {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-  }
-  
-  #exportForm label {
-    width: 100%;  /* Remove for automatic width */
-    flex: none;   /* Disable flex grow for consistent width */
-    display: inline-block;
+}
+#exportForm label:hover{
+    background-color: #2073ab;
+
+}
+#exportForm label {
+    width: 100%;
+    
+        flex: 1;
+   display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1850,13 +1853,8 @@ table.dataTable {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  #exportForm label:hover {
-    background-color: #2073ab;
-  }
-  
-  #exportForm input {
+  }       
+  #exportForm input{
     margin-bottom: 5px;
-    flex: 2;  /* Adjust width to fit remaining space */
+        flex: 2;
   }
