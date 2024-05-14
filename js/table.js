@@ -271,6 +271,17 @@ $("#export-vcard").click(function () {
             $("#exportForm").html("");            
             $("#exportForm").append(form);
 
+            //submit button
+            var btn = document.createElement("input");
+  
+            btn.value ="Odeslat";
+            btn.type = 'submit';
+                        
+              form.appendChild(btn);
+          
+          $("#exportForm").html("");            
+          $("#exportForm").append(form);
+
            //form.submit();
         }
     })
