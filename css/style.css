@@ -1796,7 +1796,7 @@ table.dataTable {
 .mM{display:block;border-radius:50%;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);position:fixed;bottom:1em;right:1em;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transition:all 240ms ease-in-out;transition:all 240ms ease-in-out;z-index:9999;opacity:0.75}.mM svg{display:block}.mM:hover{opacity:1;-webkit-transform:scale(1.125);transform:scale(1.125)}        
            
 .exportButton{
-    
+    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1823,7 +1823,7 @@ table.dataTable {
         gap: 10px;
 }
 .form-group {
-    height: 70px;
+    
     margin-bottom: 5px;
         
     display: flex;
@@ -1846,20 +1846,15 @@ table.dataTable {
 
 }
 #exportForm label {
-   margin: 0px;
+   margin: none;
    flex: 80%;
    border: none;
    border-radius: 5px;
-   height: 100%;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-   
   }       
   #exportForm input{
         flex: 20%;
-        height: 20px;
-        
+        margin-left: auto;
+        padding: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
   }
