@@ -1846,13 +1846,12 @@ table.dataTable {
 
 }
 #exportForm label {
-   width: 100;
-   flex: 0 0 80%;
+   
+   flex: 80%;
   }       
   #exportForm input{
-    flex: 0 0 20%;
+        flex: 20%;
         margin-left: auto;
-        width: 100%;
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
