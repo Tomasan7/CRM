@@ -1,9 +1,8 @@
-<button id="closeIframe">Zavřít</button><br>
+<div id = "test">
 <div id="dialog-confirm" title="Empty the recycle bin?" style="display:none">
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
 </div>
   <form action="" class="form" id="<?php //echo $_GET["id"]; ?>">
-    
     <p class="field">
      <!-- <h2 class="label" style="font-size:30px">Zobrazení a editace firmy</h2>//-->
       
@@ -116,10 +115,15 @@
   </form>
   
   <div id="firm_photos"></div>
-
+  
 <?php
  include "./vendor/dragdrop/uploader.php"; 
 
 ?>
+</div>
+<div id="testClose">
+<button id="closeIframe">Zavřít</button><br>
+</div>
+
 
 

@@ -1,12 +1,21 @@
-    
+#test{
+  overflow:scroll;
+  height: 90%;
+}    
+#testClose{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .myframe2 {
   background-color: white;
   font-family: "Titillium Web", sans-serif;
   padding: 1em;
   border:2px solid black;
   font-size: 1.15em;
-  overflow:auto;
-
+  
+  
     position: absolute;
 display:none;
     width: 50%;
@@ -20,13 +29,8 @@ display:none;
 
 #closeIframe {
     z-index: 120;
-    position: absolute;
-    float: right;
-    right: 0;
-    top:50px;
-    margin: 20px;
     border: none;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: red !important;
     color: white;
     border-radius: 10px;
