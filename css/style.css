@@ -1847,7 +1847,7 @@ table.dataTable {
 }
 #exportForm label {
    margin: 0px;
-   flex: 80%;
+   flex: 90%;
    border: none;
    border-radius: 5px;
    height: 100%;
@@ -1857,7 +1857,7 @@ table.dataTable {
    
   }       
   #exportForm input{
-        flex: 20%;
+        flex: 10%;
         
         
         border: 1px solid #ccc;
