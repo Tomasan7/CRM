@@ -1840,7 +1840,7 @@ table.dataTable {
 #exportForm label {
     width: 100%;
     
-        flex: 1;
+    grid-column: 1;
    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -1856,5 +1856,5 @@ table.dataTable {
   }       
   #exportForm input{
    
-        flex: 1;
+    grid-column: 2 / span 3;
   }
