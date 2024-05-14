@@ -1845,7 +1845,7 @@ table.dataTable {
 
 }
 #exportForm label {
-   
+   width: 100;
   }       
   #exportForm input{
         width: 100%;
