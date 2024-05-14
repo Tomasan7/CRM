@@ -1827,6 +1827,12 @@ table.dataTable {
         border: 1px solid #ccc;
         border-radius: 5px;
 }
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 #exportForm label:hover{
     background-color: #2073ab;
 
