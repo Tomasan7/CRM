@@ -1836,17 +1836,17 @@ table.dataTable {
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
    
     
 }
 #exportForm label:hover{
     background-color: #2073ab;
+    cursor: pointer;
 
 }
 #exportForm label {
-   
+   height: 100%;
    flex: 80%;
   }       
   #exportForm input{
