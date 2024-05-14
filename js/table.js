@@ -219,122 +219,109 @@ $("#export-vcard").click(function () {
 * ==================================
 * */
 
-    $("#export-btn").click(function () {
-  
-        let selected = $(".selected")
+$("#export-btn").click(function () {
+    let selected = $(".selected")
 
-        if (selected.length <= 0)
-            return
+    if (selected.length <= 0)
+        return
 
-        let array = []
-        for (const tr of selected)
-            array.push($(tr).attr('id'))
+    let array = []
+    for (const tr of selected)
+        array.push($(tr).attr('id'))
 
-        //console.log(array);
-        let form = document.createElement("form")
-        form.name="expF"
-        form.method = "POST"
-        form.action = "/firms/exportFirms.php"
+    let form = document.createElement("form")
+    form.name = "expF"
+    form.method = "POST"
+    form.action = "/firms/exportFirms.php"
 
-        let data = document.createElement("input")
+    let data = document.createElement("input")
 
-        let json = { "ids": array }
-        data.value = JSON.stringify(json)
-        data.name = "ids"
-        data.type = 'hidden'
+    let json = { "ids": array }
+    data.value = JSON.stringify(json)
+    data.name = "ids"
+    data.type = 'hidden'
 
+    form.appendChild(data);
 
-        let columns = $("#table-head th");
+    let columns = $("#table-head th");
 
-        for (let i= 1; i < columns.length / 2; i++)
-        {
-            if (columns[i].classList[0]=="hidec")
-                clname = columns[i].classList[1]
-            else
-                clname = columns[i].classList[0]
+    for (let i = 1; i < columns.length / 2; i++) {
+        if (columns[i].classList[0] == "hidec")
+            clname = columns[i].classList[1]
+        else
+            clname = columns[i].classList[0]
 
-                let formGroup = document.createElement('div');
-                formGroup.classList.add('form-group');
+        let formGroup = document.createElement('div');
+        formGroup.classList.add('form-group');
 
-            let label = document.createElement("label");
+        let label = document.createElement("label");
+        label.setAttribute("for", "for" + clname);
+        let textNode = document.createTextNode(columns[i].textContent + ": ");
+        label.appendChild(textNode);
+        formGroup.appendChild(label);
 
-            label.setAttribute("for","for"+clname);
-            let textNode = document.createTextNode(columns[i].textContent+": ");
-            label.appendChild(textNode);
+        let elm = document.createElement("input");
+        elm.name = clname;
+        elm.type = 'checkbox';
+        elm.value = "1";
+        elm.classList.add('exportCheckbox');
+        elm.setAttribute("id", "for" + clname);
+        formGroup.appendChild(elm);
 
-            form.appendChild(label);
+        form.appendChild(formGroup);
+    }
 
-            let elm = document.createElement("input");
+    //submit button
+    let submitButton = document.createElement('input');
+    submitButton.value = 'Odeslat';
+    submitButton.type = 'submit';
+    submitButton.classList.add("exportButton");
+    form.appendChild(submitButton);
 
-            elm.name =clname;
-            elm.type = 'checkbox';
-            elm.value="1";
-            elm.classList.add('exportCheckbox');
-            elm.setAttribute("id","for"+clname);
+    //invert button
+    let invertButton = document.createElement('input');
+    invertButton.value = 'Invertovat';
+    invertButton.type = 'button';
+    invertButton.classList.add("exportButton");
+    invertButton.addEventListener('click', () => {
+        let checkboxes = document.getElementsByClassName('exportCheckbox')
 
-            form.appendChild(elm);
+        for (let i = 0; i < checkboxes.length; i++)
+            checkboxes[i].checked = !checkboxes[i].checked
+
+    });
+
+    form.appendChild(invertButton);
+
+    //check all button
+    let checkAllButton = document.createElement('input');
+    checkAllButton.value = 'Vybrat vše';
+    checkAllButton.type = 'button';
+    checkAllButton.classList.add('exportButton');
+
+    let isEveryChecked = false;
+    checkAllButton.addEventListener('click', () => {
+        let checkboxes = document.getElementsByClassName('exportCheckbox')
+
+        if (isEveryChecked) {
+            for (let i = 0; i < checkboxes.length; i++)
+                checkboxes[i].checked = false;
+            isEveryChecked = false;
+        } else {
+            for (let i = 0; i < checkboxes.length; i++)
+                checkboxes[i].checked = true;
+            isEveryChecked = true;
         }
+    });
 
-        form.appendChild(data);
+    form.appendChild(checkAllButton);
 
-        //submit button
-        let submitButton = document.createElement('input');
+    let exportForm = $("#exportForm");
+    exportForm.html("");
+    exportForm.append(form);
 
-        submitButton.value ='Odeslat';
-        submitButton.type = 'submit';
-        submitButton.classList.add("exportButton")
-        form.appendChild(submitButton);
-
-        //invert button
-        let invertButton = document.createElement('input');
-
-        invertButton.value ='Invertovat';
-        invertButton.type = 'button';
-        invertButton.classList.add("exportButton")
-        invertButton.addEventListener('click' ,() => {
-                let checkboxes = document.getElementsByClassName('exportCheckbox')
-
-                for (let i = 0; i < checkboxes.length; i++)
-                    checkboxes[i].checked = !checkboxes[i].checked
-
-            }
-        )
-
-        form.appendChild(invertButton);
-
-        //invert button
-        let checkAllButton = document.createElement('input');
-
-        checkAllButton.value ='Vybrat vše';
-        checkAllButton.type = 'button';
-        checkAllButton.classList.add('exportButton')
-        let isEveryChecked = false
-        checkAllButton.addEventListener('click', () => {
-                let checkboxes = document.getElementsByClassName('exportCheckbox')
-
-                if (isEveryChecked)
-                {
-                    for (let i = 0; i < checkboxes.length; i++)
-                        checkboxes[i].checked = false
-                    isEveryChecked = false
-                }
-                else
-                {
-                    for (let i = 0; i < checkboxes.length; i++)
-                        checkboxes[i].checked = true
-                    isEveryChecked = true
-                }
-            }
-        )
-
-        form.appendChild(checkAllButton);
-
-        let exportForm = $("#exportForm");
-        exportForm.html("");
-        exportForm.append(form);
-
-        //form.submit();
-    })
+    //form.submit();
+});
 
     // Export checkbox class = 'exportCheckbox'
     // Export button class = 'exportButton'
