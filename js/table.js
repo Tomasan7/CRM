@@ -83,7 +83,7 @@ $(document).ready(function () {
   
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
-            // EDIT START
+            // TOMASAN7 - EDIT START
             $('#basic tbody').on('click', 'td', function () {
                 if (!this.classList.contains("name"))
                     return;
