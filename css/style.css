@@ -1847,13 +1847,13 @@ table.dataTable {
 }
 #exportForm label {
    margin: none;
-   flex: 80%;
+   
    border: none;
-border-radius: 5px;
+   border-radius: 5px;
   }       
   #exportForm input{
-        flex: 20%;
-        margin-left: auto;
+        
+        
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
