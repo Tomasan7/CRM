@@ -1844,7 +1844,9 @@ table.dataTable {
 }
 
 #exportForm label {
-    flex: 80%;
+    flex: 1; /* Make the label grow to fill the available space */
+    display: flex;
+    align-items: center;
 }
 
 #exportForm input {
