@@ -253,6 +253,9 @@ $("#export-vcard").click(function () {
             else
                 clname = columns[i].classList[0]
 
+                let formGroup = document.createElement('div');
+                formGroup.classList.add('form-group');
+
             let label = document.createElement("label");
 
             label.setAttribute("for","for"+clname);
