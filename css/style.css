@@ -1829,8 +1829,8 @@ table.dataTable {
 }
 
 .form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* This creates two equal columns */
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
 }
