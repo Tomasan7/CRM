@@ -333,7 +333,6 @@ $("#export-vcard").click(function () {
         //form.submit();
     })
 
-    // TODO: ADD CLASS FOR ALL OF THE BUTTONS ADDED TO THE FORM FOR STYLING, SO AS FOR THE CHECKBOXES
     // Export checkbox class = 'exportCheckbox'
     // Export button class = 'exportButton'
 
