@@ -1815,7 +1815,7 @@ table.dataTable {
 #exportForm {margin-bottom:10px;
    
     display: grid;
-    grid-auto-rows: min-content; /* Všechny řádky mají minimální velikost */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px; /* Mezery mezi prvky */
 
 }
