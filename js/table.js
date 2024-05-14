@@ -279,7 +279,7 @@ $("#export-vcard").click(function () {
                         
               form.appendChild(btn);
           
-            //invert button
+            //vse button
             var btn = document.createElement("input");
   
             btn.value ="Vybrat vše";
