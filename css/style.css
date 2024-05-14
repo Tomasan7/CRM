@@ -1797,4 +1797,13 @@ table.dataTable {
            
         
 #exportForm {margin-bottom:10px}
+#exportForm th {
+    margin-bottom: 10px;
+    background-color: #36a2eb;
+    color: #333; 
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    text-align: center; 
+  }
 #exportForm label {border-left: 1px solid black;padding-left: 3px;}        
