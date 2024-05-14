@@ -1814,8 +1814,7 @@ table.dataTable {
 }
 #exportForm {margin-bottom:10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px; /* Gap between grid items */
+    grid-template-columns: auto 1fr;
 }
 #exportForm label:hover{
     background-color: #2073ab;
