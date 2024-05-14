@@ -1813,8 +1813,10 @@ table.dataTable {
     background-color: #2073ab;
 }
 #exportForm {margin-bottom:10px;
+   
     display: grid;
-    grid-template-columns: auto 1fr;
+    gap: 10px; /* Adjust the gap between grid items */
+
 }
 #exportForm label:hover{
     background-color: #2073ab;
@@ -1835,5 +1837,5 @@ table.dataTable {
     transition: background-color 0.3s;
   }       
 #exportForm input {
-    box-sizing: border-box;
+   
 }
