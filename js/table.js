@@ -236,7 +236,25 @@ $("#export-vcard").click(function () {
         form.method = "POST"
         form.action = "/firms/exportFirms.php"
 
+<<<<<<< HEAD
         let data = document.createElement("input")
+=======
+            //invert button
+            var btn = document.createElement("input");
+  
+            btn.value ="Invertovat";
+            btn.type = 'button';
+                        
+              form.appendChild(btn);
+          
+            //vse button
+            var btn = document.createElement("input");
+  
+            btn.value ="Vybrat vše";
+            btn.type = 'button';
+                        
+              form.appendChild(btn);
+>>>>>>> 9dfbc76788cd7ed5415d7ddc11567c6b6ff73c55
 
         let json = { "ids": array }
         data.value = JSON.stringify(json)
