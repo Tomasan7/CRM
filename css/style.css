@@ -1819,6 +1819,14 @@ table.dataTable {
         gap: 10px;
 
 }
+#exportForm form {
+        flex: 1 1 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
 #exportForm label:hover{
     background-color: #2073ab;
 
@@ -1837,6 +1845,3 @@ table.dataTable {
     cursor: pointer;
     transition: background-color 0.3s;
   }       
-#exportForm input {
-   
-}
