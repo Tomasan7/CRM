@@ -1850,6 +1850,11 @@ table.dataTable {
    flex: 80%;
    border: none;
    border-radius: 5px;
+   height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+   
   }       
   #exportForm input{
         flex: 20%;
