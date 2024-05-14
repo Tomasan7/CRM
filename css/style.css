@@ -1831,21 +1831,12 @@ table.dataTable {
     background-color: #2073ab;
 
 }
-#exportForm label {
+label {
+    margin-bottom: 5px;
     flex: 1;
-   display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #36a2eb;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }       
-  #exportForm label{
+}
+
+input {
+    margin-bottom: 5px;
     flex: 2;
-  }
+}
