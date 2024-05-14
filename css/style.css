@@ -1838,7 +1838,9 @@ table.dataTable {
 
 }
 #exportForm label {
-    
+    width: 100%;
+    margin-bottom: 5px;
+        flex: 1;
    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -1853,5 +1855,6 @@ table.dataTable {
     transition: background-color 0.3s;
   }       
   #exportForm input{
-    flex: 2
+    margin-bottom: 5px;
+        flex: 2;
   }
