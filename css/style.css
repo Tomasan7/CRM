@@ -1847,12 +1847,12 @@ table.dataTable {
 }
 #exportForm label {
    margin: none;
-   
+   flex: 80%;
    border: none;
    border-radius: 5px;
   }       
   #exportForm input{
-        
+        flex: 20%;
         
         padding: 5px;
         border: 1px solid #ccc;
