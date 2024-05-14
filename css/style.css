@@ -1823,18 +1823,10 @@ table.dataTable {
         gap: 10px;
 }
 .form-group {
-    display: flex;
-    align-items: center;
-}
-#exportForm label:hover{
-    background-color: #2073ab;
-
-}
-#exportForm label {
     width: 100%;
     margin-bottom: 5px;
-        flex: 1;
-   display: inline-block;
+        
+  
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1846,6 +1838,15 @@ table.dataTable {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+#exportForm label:hover{
+    background-color: #2073ab;
+
+}
+#exportForm label {
+   
   }       
   #exportForm input{
         width: 100%;
