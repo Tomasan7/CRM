@@ -1858,7 +1858,7 @@ table.dataTable {
   }       
   #exportForm input{
         flex: 20%;
-        
+        height: 20px;
         
         border: 1px solid #ccc;
         border-radius: 4px;
