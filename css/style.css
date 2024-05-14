@@ -1800,4 +1800,14 @@ table.dataTable {
     border: 1px black;
 }
 
-#exportForm label {border-left: 1px solid black;padding-left: 3px;}        
+#exportForm label {
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #36a2eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #36a2eb;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }       
