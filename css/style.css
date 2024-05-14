@@ -1820,18 +1820,16 @@ table.dataTable {
 }
 
 #exportForm form {
-    flex: 1 1 calc(50% - 5px);
+    flex: 1 1 100%;
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .form-group {
+    flex: 1 1 calc(50% - 5px);
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -1840,7 +1838,6 @@ table.dataTable {
 }
 
 #exportForm label {
-    flex: 1;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1856,5 +1853,5 @@ table.dataTable {
 
 #exportForm input {
     margin-bottom: 5px;
-    flex: 2;
+    flex: 1;
 }
