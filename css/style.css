@@ -1797,9 +1797,8 @@ table.dataTable {
            
         
 #exportForm {margin-bottom:10px;
-    background-color: #36a2eb;
 }
-#exportForm th {
+#exportForm input {
     margin-bottom: 10px;
     background-color: #36a2eb;
     color: #333; 
