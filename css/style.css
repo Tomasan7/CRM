@@ -1812,45 +1812,49 @@ table.dataTable {
 .exportButton:hover{
     background-color: #2073ab;
 }
-#exportForm {
-    margin-bottom: 10px;
+#exportForm {margin-bottom:10px;
+   
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
 
 }
 #exportForm form {
-    flex: 1 1 calc(25% - 10px); /* Adjust the width for four columns */
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    flex: 1 1 calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
 }
 .form-group {
     display: flex;
-    flex-direction: column; /* Change row to column */
-    align-items: center; /* Align items to center */
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
-    padding: 10px; /* Adjust padding */
 }
 #exportForm label:hover{
     background-color: #2073ab;
 
 }
-.form-group label,
-.form-group input {
-    width: 100%; /* Make both label and input full width */
-    padding: 5px; /* Add padding */
-    box-sizing: border-box; /* Ensure padding is included in width */
-}
 #exportForm label {
-    background-color: #36a2eb;
-    color: #fff;
+    width: 100%;
+    
+        flex: 1;
+   display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
+    background-color: #36a2eb;
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
   }       
- 
+  #exportForm input{
+    margin-bottom: 5px;
+        flex: 2;
+  }
