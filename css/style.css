@@ -1846,7 +1846,7 @@ table.dataTable {
 
 }
 #exportForm label {
-   
+   margin: none;
    flex: 80%;
   }       
   #exportForm input{
