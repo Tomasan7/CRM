@@ -1851,8 +1851,9 @@ table.dataTable {
    border: none;
    border-radius: 5px;
    height: 100%;
-    display: flex; /* Add this */
-    align-items: center; /* Add this */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
    
   }       
   #exportForm input{
