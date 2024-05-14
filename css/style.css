@@ -1817,29 +1817,46 @@ table.dataTable {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-#exportForm form {
-    flex: 1 1 100%;
+  }
+  
+  #exportForm form {
+    flex: 1 0 50%;  /* Adjusts width to 50% */
     display: flex;
-    flex-wrap: wrap;
-}
-
-.form-group {
-    flex: 1 1 calc(50% - 5px);
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
-
-#exportForm label:hover {
-    background-color: #2073ab;
-}
-
-#exportForm label {
+  }
+  
+  #exportForm label {
+    width: 100%;  /* Remove for automatic width */
+    flex: none;   /* Disable flex grow for consistent width */
+    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    text-align:
-}
+    text-align: center;
+    text-decoration: none;
+    background-color: #36a2eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #exportForm label:hover {
+    background-color: #2073ab;
+  }
+  
+  #exportForm input {
+    margin-bottom: 5px;
+    flex: 2;  /* Adjust width to fit remaining space */
+  }
