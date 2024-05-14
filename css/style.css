@@ -1820,7 +1820,7 @@ table.dataTable {
 
 }
 #exportForm form {
-        flex: 1 1 200px;
+    flex: 1 1 calc(50% - 5px);
         display: flex;
         flex-direction: column;
         padding: 10px;
