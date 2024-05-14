@@ -214,9 +214,9 @@ $("#export-vcard").click(function () {
 });
 
 /*
-*
+* ==================================
 * Lukáš "Trup10ka" Friedl EDIT START
-*
+* ==================================
 * */
 
     $("#export-btn").click(function () {
@@ -237,21 +237,6 @@ $("#export-vcard").click(function () {
         form.action = "/firms/exportFirms.php"
 
         let data = document.createElement("input")
-            //invert button
-            var btn = document.createElement("input");
-  
-            btn.value ="Invertovat";
-            btn.type = 'button';
-                        
-              form.appendChild(btn);
-          
-            //vse button
-            var btn = document.createElement("input");
-  
-            btn.value ="Vybrat vše";
-            btn.type = 'button';
-                        
-              form.appendChild(btn);
 
         let json = { "ids": array }
         data.value = JSON.stringify(json)
@@ -353,9 +338,9 @@ $("#export-vcard").click(function () {
     // Export button class = 'exportButton'
 
     /*
-    *
+    * ================================
     * Lukáš "Trup10ka" Friedl EDIT END
-    *
+    * ================================
     * */
 
     $("#email-btn").click(function (event) {
