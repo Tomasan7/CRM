@@ -1847,9 +1847,11 @@ table.dataTable {
 }
 #exportForm label {
    width: 100;
-   background-color: red;
+   flex: 80%;
   }       
   #exportForm input{
+        flex: 20%;
+        margin-left: auto;
         width: 100%;
         padding: 5px;
         border: 1px solid #ccc;
