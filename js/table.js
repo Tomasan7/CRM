@@ -271,16 +271,16 @@ $("#export-vcard").click(function () {
             $("#exportForm").html("");            
             $("#exportForm").append(form);
 
-            //submit button
+            //invert button
             var btn = document.createElement("input");
   
-            btn.value ="Odeslat";
-            btn.type = 'submit';
+            btn.value ="Invertovat";
+            btn.type = 'button';
                         
               form.appendChild(btn);
           
-          $("#exportForm").html("");            
-          $("#exportForm").append(form);
+            $("#exportForm").html("");            
+            $("#exportForm").append(form);
 
            //form.submit();
         }
