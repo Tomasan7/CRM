@@ -1832,6 +1832,7 @@ table.dataTable {
 
 }
 #exportForm label {
+    flex: 1;
    display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -1845,3 +1846,6 @@ table.dataTable {
     cursor: pointer;
     transition: background-color 0.3s;
   }       
+  #exportForm label{
+    flex: 2;
+  }
