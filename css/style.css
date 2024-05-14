@@ -1823,7 +1823,7 @@ table.dataTable {
         gap: 10px;
 }
 .form-group {
-    
+    height: 70px;
     margin-bottom: 5px;
         
     display: flex;
@@ -1850,7 +1850,6 @@ table.dataTable {
    flex: 80%;
    border: none;
    border-radius: 5px;
-   height: 100px;
   }       
   #exportForm input{
         flex: 20%;
