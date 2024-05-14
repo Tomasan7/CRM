@@ -1832,16 +1832,6 @@ table.dataTable {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-}
-#exportForm label:hover{
-    background-color: #2073ab;
-
-}
-#exportForm label {
-    width: 100%;
-    
-        flex: 1;
-   display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -1853,6 +1843,16 @@ table.dataTable {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+#exportForm label:hover{
+    background-color: #2073ab;
+
+}
+#exportForm label {
+    width: 100%;
+    
+        flex: 1;
+   
   }       
   #exportForm input{
    
