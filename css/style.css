@@ -1807,8 +1807,8 @@ table.dataTable {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: blue;
-    background-color: #4CAF50;
+    background-color: #36a2eb;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
