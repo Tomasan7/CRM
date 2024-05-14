@@ -1814,24 +1814,17 @@ table.dataTable {
 }
 #exportForm {margin-bottom:10px;
    
-    display: flex;
-        
-        gap: 10px;
+  
 
 }
 #exportForm form {
-    flex: 1 1 calc(25% - 5px);
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
 }
 .form-group {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 10px;
 }
 #exportForm label:hover{
     background-color: #2073ab;
@@ -1855,6 +1848,8 @@ table.dataTable {
     transition: background-color 0.3s;
   }       
   #exportForm input{
-    margin-bottom: 5px;
-        flex: 2;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
   }
