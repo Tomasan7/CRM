@@ -279,8 +279,7 @@ $("#export-vcard").click(function () {
                         
               form.appendChild(btn);
           
-            $("#exportForm").html("");            
-            $("#exportForm").append(form);
+            
 
            //form.submit();
         }
