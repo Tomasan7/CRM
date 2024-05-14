@@ -88,8 +88,8 @@ function addClick() {
 
 
 $(document).ready(function(event){
-    // REMOVED BY TOMASAN7
-	//addClick();
+    /* Tomasan7 - REMOVE
+	//addClick(); */
 
   $("input[name=email").on("change, keyup",function(event){
   
@@ -154,8 +154,8 @@ $(document).ready(function(event){
       });
     });
 
-/* REMOVED BY TOMASAN7 */
-/*$(".paginate_button").each (function(event){
+/* Tomasan7 - REMOVED
+$(".paginate_button").each (function(event){
 
     $(this).click(function(event){
      addClick();
