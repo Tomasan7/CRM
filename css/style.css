@@ -1821,7 +1821,7 @@ table.dataTable {
     z-index: 10;
 }
 #container {
-    padding-bottom: 50px; /* Adjust padding-top to match the height of exportForm */
+    margin-bottom: 50px;
 }
 /*Vojta*/
 #exportForm form {
