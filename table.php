@@ -105,7 +105,7 @@ function myFunction() {
 
 
     <table id="basic" class="display">
-    <div id="exportForm"></div>
+    
         <thead id="table-head">
 
             <tr>
@@ -270,7 +270,7 @@ function myFunction() {
     </div>
 
  
-    
+    <div id="exportForm"></div>
 
 </body>
 
