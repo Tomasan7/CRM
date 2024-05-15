@@ -269,8 +269,12 @@ $("#export-btn").click(function () {
         elm.name = clname;
         elm.type = 'checkbox';
         elm.value = "1";
-        if (filteredColumns.classList.contains(clname))
-            elm.checked = true;
+        for (let j = 0; j < filteredColumns.length; j++)
+            if (filteredColumns[j].classList.contains(clname))
+            {
+                elm.checked = true;
+                break;
+            }
         elm.classList.add('exportCheckbox');
         elm.setAttribute("id", "for" + clname);
         formGroup.appendChild(elm);
