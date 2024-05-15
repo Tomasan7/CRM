@@ -1820,9 +1820,7 @@ table.dataTable {
     padding: 5px;
     z-index: 10;
 }
-#container {
-    margin-bottom: 50px;
-}
+
 /*Vojta*/
 #exportForm form {
     display: grid;
