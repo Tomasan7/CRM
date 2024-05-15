@@ -247,6 +247,8 @@ $("#export-btn").click(function () {
     let columns = $("#table-head th");
 
     let visibleColumns = $('th.sorting').filter( () =>  { return $(this).width() !== 0} )
+    console.log(visibleColumns.classList)
+    console.log(visibleColumns)
 
     for (let i = 1; i < columns.length / 2; i++) {
         if (columns[i].classList[0] == "hidec")
