@@ -107,7 +107,7 @@ function myFunction() {
     <table id="basic" class="display">
     
         <thead id="table-head">
-        <div id="exportForm"></div>
+        
             <tr>
                 <th><input type="checkbox" id="main-select"></th>
                 <th class="name">
@@ -193,7 +193,7 @@ function myFunction() {
                 </th>
                 <?php
                 $sql = "SELECT  firm.id,firm.name,firm.surname,firm.email,firm.active,firm.phone,firm.source,firm.date_of_contact,firm.date_of_2_contact,firm.date_of_meeting,firm.result,firm.workshop,firm.brigade,firm.practice,firm.cv,firm.note,subject.name as subject";
-
+                <div id="exportForm"></div>
                 $array_columns = array();
                 $columns = "SELECT id,name,type FROM columns";
                 $result = $conn->query($columns);
