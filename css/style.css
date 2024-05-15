@@ -1809,6 +1809,7 @@ table.dataTable {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+/*Vojta*/
 .exportButton:hover{
     background-color: #2073ab;
 }
@@ -1817,11 +1818,13 @@ table.dataTable {
   
 
 }
+/*Vojta*/
 #exportForm form {
     display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
 }
+/*Přiání flexboxu Vojta*/
 .form-group {
     height: 70px;
     margin-bottom: 5px;
@@ -1840,14 +1843,17 @@ table.dataTable {
    
     
 }
+/*Vojta*/
 .form-group input{
 height: 20px;
 }
+/*Vojta*/
 .form-group:hover{
     background-color: #2073ab;
     cursor: pointer;
 
 }
+/*Vojta*/
 #exportForm label {
    margin: 0px;
    flex: 90%;
@@ -1858,11 +1864,10 @@ height: 20px;
     align-items: center; 
     justify-content: center;
    
-  }       
+  }
+  /*Vojta*/       
   #exportForm input{
         flex: 10%;
-        
-        
         border: 1px solid #ccc;
         border-radius: 4px;
   }
