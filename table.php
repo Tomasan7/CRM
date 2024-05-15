@@ -101,10 +101,11 @@ function myFunction() {
 <body>
 
    
- <div id="exportForm"></div>
+ 
 
 
     <table id="basic" class="display">
+    <div id="exportForm"></div>
         <thead id="table-head">
 
             <tr>
