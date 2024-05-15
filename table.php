@@ -100,7 +100,7 @@ function myFunction() {
 
 <body>
 
-   
+<div id="exportForm"></div>
  
 
 
@@ -265,7 +265,7 @@ function myFunction() {
 
     </div>
 
-    <div id="exportForm"></div>
+    
 <div class="myframe2">
         <?php include "editFirm/editFirmForm.php"; ?>
     </div>

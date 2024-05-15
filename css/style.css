@@ -1814,7 +1814,12 @@ table.dataTable {
     background-color: #2073ab;
 }
 #exportForm {margin-bottom:10px;
-   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust background color as needed */
+    z-index: 1000; /* Adjust z-index as needed */
   
 
 }
