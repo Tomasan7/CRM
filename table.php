@@ -107,7 +107,7 @@ function myFunction() {
     <table id="basic" class="display">
     
         <thead id="table-head">
-
+        <div id="exportForm"></div>
             <tr>
                 <th><input type="checkbox" id="main-select"></th>
                 <th class="name">
@@ -270,7 +270,7 @@ function myFunction() {
     </div>
 
  
-    <div id="exportForm"></div>
+    
 
 </body>
 
