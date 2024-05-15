@@ -258,14 +258,14 @@ function myFunction() {
             <?php
             }
             ?>
-            <div id="exportForm"></div>
+            
         </tbody>
         <tfoot></tfoot>
     </table>
 
     </div>
 
-    
+    <div id="exportForm"></div>
 <div class="myframe2">
         <?php include "editFirm/editFirmForm.php"; ?>
     </div>
