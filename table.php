@@ -107,7 +107,7 @@ function myFunction() {
     <table id="basic" class="display">
     
         <thead id="table-head">
-        <div id="exportForm"></div>
+        
             <tr>
                 <th><input type="checkbox" id="main-select"></th>
                 <th class="name">
@@ -215,6 +215,7 @@ function myFunction() {
                 $sql .= " FROM firm inner join subject on firm.subject_id = subject.id order by active desc, firm.name";
 
                 ?>
+                <div id="exportForm"></div>
             </tr>
         </thead>
         <tbody>
