@@ -47,19 +47,6 @@ $(document).ready( function () {
                 zeroRecords:    "Nenalezeny žádné záznamy",
             },
     } );
-
-    var serachInput = $("#basic_filter label input");
-    serachInput.keyup(function(){
-        var value = serachInput.val();
-        const d = new Date();
-        d.setTime(d.getTime() + (0.5*24*60*60*1000));
-        let expires = "expires="+ d.toUTCString();
-        document.cookie = "search="+ value+ ";"+ expires;
-        if (window.history.replaceState) {
-            window.history.replaceState("", "CRM", window.location.origin+ "?search="+ value);
-         }
-    });
-
     
 
     $(".dataTables_length").append($('<div class="table-filter"><button id="delete-btn">Smazat vybrané</button>'+

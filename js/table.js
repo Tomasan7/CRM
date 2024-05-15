@@ -137,19 +137,32 @@ $(document).ready(function () {
     
 }
 
-    var table = $('#basic').DataTable().on('search.dt', function () {
-        var serachInput = $("#basic_filter label input");
-        var value = serachInput.val();
-        if (value == "") {
-            Setcookie("");
+    /*
+    * ==================================
+    * Lukáš "Trup10ka" Friedl EDIT START
+    * ==================================
+    */
+    
+    $('#basic').DataTable().on('search.dt',  () => 
+    {
+        const searchInput = $("#basic_filter label input");
+        const value = searchInput.val();
+        if (value === "")
+        {
 			//window.history.replaceState("", "CRM", window.location.origin + "table.php?search=" + value);
-        } else {
-            Setcookie(value);
-            if (window.history.replaceState) {
+        } else
+        {
+            if (window.history.replaceState)
+            {
               //  window.history.replaceState("", "CRM", window.location.origin + "table.php?search=" + value);
             }
         }
     });
+    /*
+    * ==================================
+    * Lukáš "Trup10ka" Friedl EDIT END
+    * ==================================
+    */
     
    
     var checkActive = $("#check-active");
@@ -361,15 +374,6 @@ $("#export-btn").click(function () {
             window.location = "./firms/editRowsForm.php";
         }
     });
-
-
-    function Setcookie(value) {
-        const d = new Date();
-        d.setTime(d.getTime() + (0.5 * 24 * 60 * 60 * 1000));
-        let expires = "expires=" + d.toUTCString();
-        document.cookie = "search=" + value + ";" + expires;
-    }
-
 
 });//document ready
 

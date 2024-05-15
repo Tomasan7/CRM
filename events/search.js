@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function()
+{
     var search = $("#search-bt");
     var options = $("option").clone();
     search.keydown(function(){

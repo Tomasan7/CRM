@@ -91,7 +91,7 @@ $(document).ready(function(event){
     /* Tomasan7 - REMOVE
 	//addClick(); */
 
-  $("input[name=email").on("change, keyup",function(event){
+  $("input[name=email]").on("change, keyup",function(event){
   
     $(this).removeClass("success");
     $(this).removeClass("error");
