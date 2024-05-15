@@ -247,9 +247,7 @@ $("#export-btn").click(function () {
     let columns = $("#table-head th");
 
     const thElements = document.querySelectorAll('th.sorting');
-    console.log(thElements)
     const filteredColumns = Array.from(thElements).filter(th => th.offsetWidth > 0);
-    console.log(filteredColumns)
 
     for (let i = 1; i < columns.length / 2; i++) {
         if (columns[i].classList[0] == "hidec")
