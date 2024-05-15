@@ -1821,12 +1821,11 @@ table.dataTable {
 /*Vojta*/
 #exportForm form {
     display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 10px;
 }
 /*Přiání flexboxu Vojta*/
 .form-group {
-    height: 70px;
     margin-bottom: 5px;
         
     display: flex;
