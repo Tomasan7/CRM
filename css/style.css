@@ -1809,52 +1809,65 @@ table.dataTable {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+/*Vojta*/
 .exportButton:hover{
     background-color: #2073ab;
 }
 #exportForm {margin-bottom:10px;
    
-    display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+  
 
 }
+/*Vojta*/
 #exportForm form {
-    flex: 1 1 calc(50% - 5px);
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+    display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
 }
+/*Přiání flexboxu Vojta*/
 .form-group {
+    margin-bottom: 5px;
+    height: 40px;
+        
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 10px;
-}
-#exportForm label:hover{
-    background-color: #2073ab;
-
-}
-#exportForm label {
-    width: 100%;
     
-        flex: 1;
-   display: inline-block;
-    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
     background-color: #36a2eb;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
-  }       
-  #exportForm input{
    
-        flex: 2;
+    
+}
+/*Vojta*/
+.form-group input{
+height: 20px;
+}
+/*Vojta*/
+.form-group:hover{
+    background-color: #2073ab;
+    cursor: pointer;
+
+}
+/*Vojta*/
+#exportForm label {
+   margin: 0px;
+   flex: 90%;
+   border: none;
+   border-radius: 5px;
+   height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+   
+  }
+  /*Vojta*/       
+  #exportForm input{
+        flex: 10%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
   }

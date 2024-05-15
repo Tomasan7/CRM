@@ -62,6 +62,7 @@ $(document).ready(function () {
             orderable: false
         }],
        // responsive: true,
+        /*Vojta*/
         language: {
             search: "",
             searchPlaceholder: "Vyhledávání",
@@ -258,6 +259,9 @@ $("#export-btn").click(function () {
 
     let columns = $("#table-head th");
 
+    const thElements = document.querySelectorAll('th.sorting');
+    const filteredColumns = Array.from(thElements).filter(th => th.offsetWidth > 0);
+
     for (let i = 1; i < columns.length / 2; i++) {
         if (columns[i].classList[0] == "hidec")
             clname = columns[i].classList[1]
@@ -273,10 +277,17 @@ $("#export-btn").click(function () {
         label.appendChild(textNode);
         formGroup.appendChild(label);
 
+
         let elm = document.createElement("input");
         elm.name = clname;
         elm.type = 'checkbox';
         elm.value = "1";
+        for (let j = 0; j < filteredColumns.length; j++)
+            if (filteredColumns[j].classList.contains(clname))
+            {
+                elm.checked = true;
+                break;
+            }
         elm.classList.add('exportCheckbox');
         elm.setAttribute("id", "for" + clname);
         formGroup.appendChild(elm);

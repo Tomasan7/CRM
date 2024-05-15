@@ -29,6 +29,7 @@ $(document).ready( function () {
             targets: 0,
             orderable: false
             } ],
+            /*Vojta*/
             language: {
                 search: "",
                 searchPlaceholder: "Vyhledávání",

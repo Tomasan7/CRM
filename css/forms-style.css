@@ -1,7 +1,9 @@
+/*Vojta*/
 #test{
   overflow:scroll;
   height: 90%;
-}    
+}  
+/*Vojta*/  
 #testClose{
   height: 10%;
   display: flex;
