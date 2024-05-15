@@ -1814,11 +1814,7 @@ table.dataTable {
     background-color: #2073ab;
 }
 #exportForm {margin-bottom:10px;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    padding: 5px;
-    z-index: 10;
+    
 }
 /*Vojta*/
 #exportForm form {
