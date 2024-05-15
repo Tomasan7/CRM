@@ -215,7 +215,6 @@ function myFunction() {
                 $sql .= " FROM firm inner join subject on firm.subject_id = subject.id order by active desc, firm.name";
 
                 ?>
-                <div id="exportForm"></div>
             </tr>
         </thead>
         <tbody>
@@ -259,6 +258,7 @@ function myFunction() {
             <?php
             }
             ?>
+            <div id="exportForm"></div>
         </tbody>
         <tfoot></tfoot>
     </table>
