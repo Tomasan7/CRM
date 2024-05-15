@@ -101,19 +101,11 @@ $(document).ready( function () {
     }
     });
 
-    /*$('#basic').DataTable().on( 'search.dt', function () {
-        var serachInput = $("#basic_filter label input");
-        var value = serachInput.val();
-        if(value == ""){
-            Setcookie("");
-        }else {
-            Setcookie(value);
-        if (window.history.replaceState) {
-            window.history.replaceState("", "CRM", window.location.origin+ "?search="+ value);
-         }
-        }
-    } );*/
-
+    /*
+    * ========================================
+    * Lukáš "Trup10ka" Friedl REMOVE method for saving cookie on search bar
+    * ========================================
+    */
 
     $("#export-btn").click(function(){
         var selected = $(".selected");
