@@ -1840,6 +1840,9 @@ table.dataTable {
    
     
 }
+.form-group input{
+height: 20px;
+}
 .form-group:hover{
     background-color: #2073ab;
     cursor: pointer;
