@@ -246,6 +246,8 @@ $("#export-btn").click(function () {
 
     let columns = $("#table-head th");
 
+    let visibleColumns = $('th.sorting').filter( () =>  { return $(this).width() !== 0} )
+
     for (let i = 1; i < columns.length / 2; i++) {
         if (columns[i].classList[0] == "hidec")
             clname = columns[i].classList[1]
@@ -261,10 +263,13 @@ $("#export-btn").click(function () {
         label.appendChild(textNode);
         formGroup.appendChild(label);
 
+
         let elm = document.createElement("input");
         elm.name = clname;
         elm.type = 'checkbox';
         elm.value = "1";
+        if (visibleColumns.classList.contains(clname))
+            elm.checked = true;
         elm.classList.add('exportCheckbox');
         elm.setAttribute("id", "for" + clname);
         formGroup.appendChild(elm);
