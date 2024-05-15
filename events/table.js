@@ -101,7 +101,7 @@ $(document).ready( function () {
     }
     });
 
-    $('#basic').DataTable().on( 'search.dt', function () {
+    /*$('#basic').DataTable().on( 'search.dt', function () {
         var serachInput = $("#basic_filter label input");
         var value = serachInput.val();
         if(value == ""){
@@ -112,7 +112,7 @@ $(document).ready( function () {
             window.history.replaceState("", "CRM", window.location.origin+ "?search="+ value);
          }
         }
-    } );
+    } );*/
 
 
     $("#export-btn").click(function(){
