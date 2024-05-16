@@ -1807,10 +1807,10 @@ table.dataTable {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    border-radius: 8px;
     background-color: #36a2eb;
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
