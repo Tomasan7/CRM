@@ -1820,8 +1820,8 @@ table.dataTable {
     margin-bottom:10px;
     position: fixed;
     top: 0;
-    background-color: white;
     padding: 5px;
+    background-color: transparent;
     z-index: 10;
 }
 
@@ -1830,6 +1830,7 @@ table.dataTable {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
+    background-color: rgba(220, 220, 220, 0.85);
 }
 /*Přiání flexboxu Vojta*/
 .form-group {
