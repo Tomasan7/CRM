@@ -1835,7 +1835,13 @@ table.dataTable {
 
 @media screen and (max-width: 450px)
 {
-    #exportForm form {
+    #exportForm
+    {
+        justify-content: flex-start;
+    }
+
+    #exportForm form
+    {
         grid-template-columns: repeat(2, 1fr);
     }
 }
