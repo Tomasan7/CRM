@@ -100,13 +100,16 @@ function myFunction() {
 
 <body>
 
-   
- <div id="exportForm"></div>
+<div id="exportForm"></div>
+
+
+ 
 
 
     <table id="basic" class="display">
+    
         <thead id="table-head">
-
+        
             <tr>
                 <th><input type="checkbox" id="main-select"></th>
                 <th class="name">
@@ -257,6 +260,7 @@ function myFunction() {
             <?php
             }
             ?>
+            
         </tbody>
         <tfoot></tfoot>
     </table>
