@@ -1807,7 +1807,7 @@ table.dataTable {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #36a2eb;
+    background-color: #214798;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -1819,7 +1819,7 @@ table.dataTable {
 }
 #exportForm {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     position: fixed;
     top: 0;
