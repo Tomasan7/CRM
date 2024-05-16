@@ -1796,7 +1796,7 @@ table.dataTable {
          /*#basic_filter {position:fixed}*/   
          .myframe2 {width:100%;z-index:3;}  
       
-        }//(max-width: 640px)
+        }
         
 .mM{display:block;border-radius:50%;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);position:fixed;bottom:1em;right:1em;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transition:all 240ms ease-in-out;transition:all 240ms ease-in-out;z-index:9999;opacity:0.75}.mM svg{display:block}.mM:hover{opacity:1;-webkit-transform:scale(1.125);transform:scale(1.125)}        
            
@@ -1836,6 +1836,7 @@ table.dataTable {
     padding: 10px;
     gap: 10px;
     background-color: rgba(220, 220, 220, 0.85);
+    border-radius: 8px;
 }
 
 @media screen and (max-width: 450px)
