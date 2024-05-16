@@ -1,15 +1,25 @@
-/*Vojta*/
+/* ====================================================
+ * Vojta "VojtaD" Drobný + Jan Oliver Poloch EDIT START
+ * ====================================================
+ */
+
 #test{
   overflow:scroll;
   height: 90%;
 }  
-/*Vojta*/  
+
 #testClose{
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* ====================================================
+ * Vojta "VojtaD" Drobný + Jan Oliver Poloch EDIT END
+ * ====================================================
+ */
+
 .myframe2 {
   background-color: white;
   font-family: "Titillium Web", sans-serif;
@@ -28,6 +38,10 @@ display:none;
     margin: auto;
 }
 
+/* ====================================================
+ * Vojta "VojtaD" Drobný + Jan Oliver Poloch EDIT START
+ * ====================================================
+ */
 
 #closeIframe {
     z-index: 120;
@@ -43,6 +57,11 @@ display:none;
     cursor: pointer;
     background-color: #D10000 !important;
 }
+
+/* ====================================================
+ * Vojta "VojtaD" Drobný + Jan Oliver Poloch EDIT END
+ * ====================================================
+ */
 
 @media screen and (min-width: 40em) {
   myframe2 {

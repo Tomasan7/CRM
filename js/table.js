@@ -143,8 +143,9 @@ $(document).ready(function () {
     * Lukáš "Trup10ka" Friedl EDIT START
     * ==================================
     */
-    
-    $('#basic').DataTable().on('search.dt',  () => 
+
+    // REMOVED
+    /*$('#basic').DataTable().on('search.dt',  () =>
     {
         const searchInput = $("#basic_filter label input");
         const value = searchInput.val();
@@ -158,13 +159,13 @@ $(document).ready(function () {
               //  window.history.replaceState("", "CRM", window.location.origin + "table.php?search=" + value);
             }
         }
-    });
+    });*/
     /*
     * ==================================
     * Lukáš "Trup10ka" Friedl EDIT END
     * ==================================
     */
-    
+
    
     var checkActive = $("#check-active");
     $('#basic').DataTable().column(4).search("1", true, false, true).draw();
