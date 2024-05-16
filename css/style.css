@@ -1865,7 +1865,7 @@ table.dataTable {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
