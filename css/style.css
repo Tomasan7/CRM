@@ -1834,7 +1834,7 @@ table.dataTable {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 10px;
-    gap: 10px;
+    gap: 5px;
     background-color: rgba(220, 220, 220, 0.85);
     border-radius: 8px;
 }
