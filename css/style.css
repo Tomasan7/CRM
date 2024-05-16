@@ -1813,7 +1813,11 @@ table.dataTable {
 .exportButton:hover{
     background-color: #2073ab;
 }
-#exportForm {margin-bottom:10px;
+#exportForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom:10px;
     position: fixed;
     top: 0;
     background-color: white;
@@ -1824,8 +1828,8 @@ table.dataTable {
 /*Vojta*/
 #exportForm form {
     display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
 /*Přiání flexboxu Vojta*/
 .form-group {
