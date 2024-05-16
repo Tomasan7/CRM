@@ -221,6 +221,7 @@ $("#export-vcard").click(function () {
 * */
 
 $("#export-btn").click(function () {
+    const exportFormDiv = $("#exportForm");
     let selected = $(".selected")
 
     if (selected.length <= 0)
@@ -283,14 +284,15 @@ $("#export-btn").click(function () {
     }
 
     //submit button
-    let submitButton = document.createElement('input');
+    const submitButton = document.createElement('input');
     submitButton.value = 'Odeslat';
     submitButton.type = 'submit';
     submitButton.classList.add("exportButton");
+
     form.appendChild(submitButton);
 
     //invert button
-    let invertButton = document.createElement('input');
+    const invertButton = document.createElement('input');
     invertButton.value = 'Invertovat';
     invertButton.type = 'button';
     invertButton.classList.add("exportButton");
@@ -305,7 +307,7 @@ $("#export-btn").click(function () {
     form.appendChild(invertButton);
 
     //check all button
-    let checkAllButton = document.createElement('input');
+    const checkAllButton = document.createElement('input');
     checkAllButton.value = 'Vybrat vše';
     checkAllButton.type = 'button';
     checkAllButton.classList.add('exportButton');
@@ -327,9 +329,19 @@ $("#export-btn").click(function () {
 
     form.appendChild(checkAllButton);
 
-    let exportForm = $("#exportForm");
-    exportForm.html("");
-    exportForm.append(form);
+    const closeFormButton = document.createElement('input');
+    closeFormButton.value = 'Zavřít';
+    closeFormButton.type = 'button';
+    closeFormButton.classList.add('exportButton');
+    closeFormButton.addEventListener('click', () => {
+            exportFormDiv.html("");
+        }
+    )
+
+    form.appendChild(closeFormButton);
+
+    exportFormDiv.html("");
+    exportFormDiv.append(form);
 
     //form.submit();
 });
