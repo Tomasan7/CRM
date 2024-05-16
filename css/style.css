@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .dataTables_length{
 /*    width: 80%;*/
     justify-content: space-between !important;
