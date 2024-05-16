@@ -1832,6 +1832,14 @@ table.dataTable {
     gap: 10px;
     background-color: rgba(220, 220, 220, 0.85);
 }
+
+@media screen and (max-width: 450px)
+{
+    #exportForm form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /*Přiání flexboxu Vojta*/
 .form-group {
     margin-bottom: 5px;
