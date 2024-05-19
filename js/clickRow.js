@@ -88,8 +88,19 @@ function addClick() {
 
 
 $(document).ready(function(event){
-    /* Tomasan7 - REMOVE
-	//addClick(); */
+    /*
+    * ================================
+    * Tomáš "Tomasan7" Hůla EDIT START
+    * ================================
+    */
+
+    // REMOVED - addClick();
+
+    /*
+    * ================================
+    * Tomáš "Tomasan7" Hůla EDIT END
+    * ================================
+    */
 
   $("input[name=email]").on("change, keyup",function(event){
   
@@ -154,23 +165,31 @@ $(document).ready(function(event){
       });
     });
 
-/* Tomasan7 - REMOVED
-$(".paginate_button").each (function(event){
 
-    $(this).click(function(event){
-     addClick();
-     });
- 
-      });*/
+    /*
+    * ================================
+    * Tomáš "Tomasan7" Hůla EDIT START
+    * ================================
+    */
+
+    // REMOVED
+    /*
+    $(".paginate_button").each (function(event){
+
+        $(this).click(function(event){
+            addClick();
+        });
+
+    });
+    */
+    /*
+    * ================================
+    * Tomáš "Tomasan7" Hůla EDIT END
+    * ================================
+    */
      $(".overlay button").click(function(event){
      hideFirmEdit();
      });
-     
-     
-     
-     
-     
-
 });
 
 

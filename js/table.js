@@ -62,7 +62,13 @@ $(document).ready(function () {
             orderable: false
         }],
        // responsive: true,
-        /*Vojta*/
+
+       /*
+        * =================================
+        * Vojta "VojtaD" Drobný EDIT START
+        * =================================
+        */
+
         language: {
             search: "",
             searchPlaceholder: "Vyhledávání",
@@ -81,16 +87,29 @@ $(document).ready(function () {
             zeroRecords:    "Nenalezeny žádné záznamy",
         },
 
+        /*
+        * ==============================
+        * Vojta "VojtaD" Drobný EDIT END
+        * ===============================
+        */
   
         initComplete: function (settings, json) {
             $('.dataTables_scrollBody').height($(window).innerHeight() - 220);
-            // TOMASAN7 - EDIT START
+            /*
+             * =================================
+             * Tomáš "TOMASAN7" Hůla EDIT START
+             * =================================
+             */
             $('#basic tbody').on('click', 'td', function () {
                 if (!this.classList.contains("name"))
                     return;
                 editClick(this.parentElement.id, 1);
             });
-            // EDIT END
+            /*
+             * =================================
+             * Tomáš "TOMASAN7" Hůla EDIT START
+             * =================================
+             */
         }
 
     });//$('#basic').DataTable({
@@ -232,7 +251,7 @@ $("#export-vcard").click(function () {
 * ==================================
 * Lukáš "Trup10ka" Friedl EDIT START
 * ==================================
-* */
+*/
 
 $("#export-btn").click(function () {
     const exportFormDiv = $("#exportForm");
